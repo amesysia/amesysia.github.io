@@ -1,1 +1,106 @@
+<!DOCTYPE html>
+<html lang="tr">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hafta 4 Ödev 2</title>
+</head>
+
+<body>
+
+    <h1>Teste başlamadan önce iletişim bilgilerinizi yazın.</h1>
+
+    <table>
+        <tr>
+        <td>Kullanıcı Adı:</td>
+        <td>
+                <input type="text" placeholder="Kullanıcı adınızı giriniz"> 
+        </td>
+    </tr>
+
+    <tr>
+        <td>E-posta:</td>
+        <td>
+            <input type="email" placeholder="E-postanızı giriniz">               
+        </td>
+    </tr>
+
+    <tr>
+        <td>Parola</td>
+        <td>
+        <input type="password" placeholder="Şifrenizi giriniz">
+        </td>
+    </tr>
+    </table>
+
+    <br>
+    <hr>
+    <br>
+    
+    <form method="get">
+        <fieldset>
+            <legend>Bilişim Sınavı</legend>
+            <ol>
+                <li>
+                    <p>HTML açılımı nedir?</p>
+                    <p>
+                        <input type="radio" id="1" name="soru1" value="a">
+                        <label for="1">Hyper Text Markup Language</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="2" name="soru1" value="b">
+                        <label for="2">High Tech Modern Language</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="3" name="soru1" value="c">
+                        <label for="3">Hyperlink and Text Markup Language</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="4" name="soru1" value="d">
+                        <label for="4">Home Tool Markup Language</label>
+                    </p>                    
+                </li>
+                <br>
+                <li>
+                    <p>Hangileri Web programlama dilidir?</p>
+                    <p>
+                        <input type="checkbox" id="1" name="soru2" value="a">
+                        <label for="1">CSS</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="2" name="soru2" value="b">
+                        <label for="2">HTML</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="3" name="soru2" value="c">
+                        <label for="3">Assembly</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="4" name="soru2" value="d">
+                        <label for="4">C++</label>
+                    </p>                    
+                </li>
+                <br>
+                <li>
+                    <p>C# dilinde byte en fazla ne kadar değer alabilir?</p>
+                    <p>
+                        <label for="byte">0-255 arası sayı seçiniz:</label>
+                        <input 
+                        type="range" 
+                        id="byte" 
+                        name="soru3"
+                        min="0" 
+                        max="255" 
+                        value="255" 
+                        step="1">
+                    </p>
+                </li>
+            </ol>
+            <br>
+            <input type="submit" value="Sınavı bitir">
+        </fieldset>
+    </form>
+
+</body>
+</html>
