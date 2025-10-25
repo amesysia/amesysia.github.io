@@ -1,0 +1,17 @@
+.ana-baslik
+{
+  font-family: Arial, sans-serif;
+  color: rgb(0, 0, 0);
+  text-align: left;
+}
+
+.kutu-stil
+{
+  border: 2px solid rgb(170, 10, 10);
+  padding: 15px;
+  background-color: #f0fff0;
+  margin-left: 0;   
+  margin-right: auto;
+  width: 50%;
+}
+

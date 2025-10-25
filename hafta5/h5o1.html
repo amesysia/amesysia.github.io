@@ -4,9 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inline CSS</title>
+    <link rel="stylesheet" href="h5o1.css">
+    <style>
+        body {background-color: powderblue;text-align: center;}
+        h1 {color: rgb(102, 102, 189); font-family: 'Courier New', Courier, monospace}
+        th {background-color: #3f51b5; color: rgb(218, 161, 161); padding: 10px 20px; font-family: 'Courier New', Courier, monospace}
+        td {color: blueviolet; padding: 10px 5px; font-family: 'Courier New', Courier, monospace}
+        table {margin: 0 auto;border-collapse: collapse; width: 800px;}
+        tr:nth-child(even) { background-color: #9fb5d3; }
+        td:hover { background-color: #ffffff; }
+    </style>
 </head>
 <body>
-    <!-- <table border="1" width="60%">
+    
+    <h1 style="color: rgb(73, 112, 73);text-align: center; font-family: Arial, sans-serif" >Inline CSS</h1>
+        <table border="5" style="border-collapse: collapse; border-color: rgb(165, 93, 0); border-spacing: 0; width: 500px !important;">
+        <tr>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th style="color:rgb(221, 141, 141);">Pazartesi</th>
+                    <th style="color:rgb(86, 168, 61);">Salı</th>
+                    <th style="color:rgb(122, 57, 97);">Çarşamba</th>
+                    <th style="color:rgb(84, 62, 145);">Perşembe</th>
+                    <th style="color:rgb(83, 153, 126);">Cuma</th>
+                </tr>
+            </thead>
+            <thead>
+                <tr>
+                    <th style="color:rgb(181, 206, 134);">8:40-10:30</th>
+                    <td>BTE307</td>
+                    <td>BTE113</td>
+                    <td>BTE311</td>
+                    <td></td>
+                    <td>GKS104</td>
+                </tr>
+                <tr>
+                    <th style="color:rgb(181, 206, 134);">10:40-12:30</th>
+                    <td>EGT254</td>
+                    <td>EGT454</td>
+                    <td>BTE313</td>
+                    <td></td>
+                    <td>EGT304</td>
+                </tr>
+                <tr>
+                    <th style="color:rgb(181, 206, 134);">12:40-14.30</th>
+                    <td></td>
+                    <td></td>
+                    <td>BTE309</td>
+                    <td></td>
+                    <td>EGT303</td>
+                </tr>
+                <tr></tr>
+            </thead>
+        </tr>
+    </table>
+    <br>
+    
+    <h1>Internal CSS</h1>
+        <table border="1" width="60%">
         <tr>
             <thead>
                 <tr>
@@ -48,24 +104,23 @@
         </tr>
     </table>
     <br>
-    -->
-    
-    <h1 style="color: rgb(73, 112, 73);text-align: center;" >Inline CSS</h1>
-        <table border="5" width="30%" style="border-collapse: collapse; border-color: rgb(165, 93, 0); border-spacing: 0;">
+
+        <h1 class="ana-baslik">External CSS</h1>
+        <table border="1" width="60%" class="kutu-stil">
         <tr>
             <thead>
                 <tr>
                     <th></th>
-                    <th style="color:rgb(221, 141, 141);">Pazartesi</th>
-                    <th style="color:rgb(86, 168, 61);">Salı</th>
-                    <th style="color:rgb(122, 57, 97);">Çarşamba</th>
-                    <th style="color:rgb(84, 62, 145);">Perşembe</th>
-                    <th style="color:rgb(83, 153, 126);">Cuma</th>
+                    <th>Pazartesi</th>
+                    <th>Salı</th>
+                    <th>Çarşamba</th>
+                    <th>Perşembe</th>
+                    <th>Cuma</th>
                 </tr>
             </thead>
             <thead>
                 <tr>
-                    <th style="color:green;">8:40-10:30</th>
+                    <th>8:40-10:30</th>
                     <td>BTE307</td>
                     <td>BTE113</td>
                     <td>BTE311</td>
@@ -73,7 +128,7 @@
                     <td>GKS104</td>
                 </tr>
                 <tr>
-                    <th style="color:green;">10:40-12:30</th>
+                    <th>10:40-12:30</th>
                     <td>EGT254</td>
                     <td>EGT454</td>
                     <td>BTE313</td>
@@ -81,7 +136,7 @@
                     <td>EGT304</td>
                 </tr>
                 <tr>
-                    <th style="color:green;">12:40-14.30</th>
+                    <th>12:40-14.30</th>
                     <td></td>
                     <td></td>
                     <td>BTE309</td>
@@ -92,8 +147,10 @@
             </thead>
         </tr>
     </table>
-    <br>
+    
+    <p>
+    <a href="../index.html">Ana Menü</a> 
+    </p>
 
 </body>
 </html>
-
