@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animasyon</title>
+    <style>    
+    body
+    {
+      background-color: #b4d5df;    
+    }
+
+    h1
+    {
+      color: #9b4150;
+      margin-top: 40px;
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+
+    .daire1
+    {   
+      width: 100px; 
+      height: 100px;
+      border-radius: 50%; 
+      position: absolute;
+      margin-left: 20px;
+      margin-top: 100px;
+      align-items: center;
+      justify-content: center;
+      background-color: #ffffff;
+      animation: asagiyukari 2s infinite alternate;
+    }
+
+    @keyframes asagiyukari
+    {
+          from {top: 180px;}
+    to {top: 50px;}
+    }
+
+
+    .daire2
+    {
+      width: 100px; 
+      height: 100px;
+      border-radius: 50%; 
+      position: absolute;   
+      margin-left: 180px;
+      margin-top: 100px;
+      align-items: center;
+      justify-content: center;
+      background-color: #ffffff;
+      z-index: 1;
+      animation: buyume 2s infinite alternate;
+    }
+
+    @keyframes buyume
+    {
+      from {transform: scale(1);}
+      to {transform: scale(1.2);}
+    }
+
+    .daire3
+    {   
+      width: 100px; 
+      height: 100px;
+      border-radius: 50%; 
+      position: absolute;
+      margin-left: 350px;
+      margin-top: 100px;
+      align-items: center;
+      justify-content: center;
+      background-color: #ffffff;
+      animation: saydamlik 2s infinite alternate;
+    }
+
+    @keyframes saydamlik
+    {
+      from {opacity:1;}
+      to {opacity:0.3;}
+    }
+
+    .daire4
+    {  
+         width: 100px; 
+      height: 100px;
+      border-radius: 50%; 
+      position: absolute;  
+      margin-left: 520px;
+      margin-top: 100px;
+      align-items: center;
+      justify-content: center;
+      background-color: #ffffff;
+      animation: yana 2s infinite alternate;
+      
+    }
+
+    @keyframes yana
+    {
+      0% {transform: translateX(0);}
+      100% {transform: translateX(130px);}
+    }
+
+    .daire5
+    {   
+      width: 100px; 
+      height: 100px;
+      border-radius: 50%; 
+      position: absolute;
+      margin-left: 770px;
+      margin-top: 100px;
+      align-items: center;
+      justify-content: center;
+      background-color: #ffffff;
+      animation: donme 2s infinite alternate;
+    }
+
+    @keyframes donme
+    {
+      0% {transform: rotate(0deg);}
+      100% {transform: rotate(360deg);}
+    }
+
+ img
+ {
+  width: 100px;
+  height: 100px;
+}
+    </style>
+
+</head>
+<body>
+  <h1>CSS Animasyon</h1>
+    <div class="hareketli-arkaplan">
+      <div class="ortalama">
+        <div class="daire daire1"> <img src="mutlu.png" alt="daire1"></div>
+        <div class="daire daire2"> <img src="mutsuz.png" alt="daire2"></div>
+        <div class="daire daire3"> <img src="sasirmis.png" alt="daire3"></div>
+        <div class="daire daire4"> <img src="duz.png" alt="daire4"></div>
+        <div class="daire daire5"> <img src="disguise.png" alt="daire5"></div>
+      </div>  
+    </div>
+
+    <p>
+    <a href="../index.html">Ana Menü</a> 
+    </p>
+
+</body>
+</html>
