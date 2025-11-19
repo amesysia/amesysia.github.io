@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Uygulaması</title>
+
+    <style>
+        .toggle-image {
+            width: 200px;
+            height: 150px;
+            margin: 10px;
+            border: 2px solid #333;
+            background-size: cover;
+            background-position: center;
+        }
+
+        body {
+            transition: background-image 0.5s ease-in-out;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        #content {
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 800px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+
+        <div>
+            <button onclick="toggleImage(1)">Göster/Gizle</button>
+            <div id="image1" class="toggle-image" style="background-image: url('https://64.media.tumblr.com/e88f673b4f6878906d2de6fdbfd4486f/a084a4c94063d9a4-7d/s1280x1920/e8a56f13866efe42754914d814f6e1864ecfa711.pnj');"></div>
+        </div>
+
+        <div>
+            <button onclick="toggleImage(2)">Göster/Gizle</button>
+            <div id="image2" class="toggle-image" style="background-image: url('https://64.media.tumblr.com/4014c5047fbd8088469a402908e5b45b/a084a4c94063d9a4-b1/s1280x1920/15609e4a5b60c43a15ffd9c11b42bc7c5042023f.pnj');"></div>
+        </div>
+
+        <div>
+        <button onclick="toggleImage(3)">Göster/Gizle</button>
+        <div id="image3" class="toggle-image" style="background-image: url('https://64.media.tumblr.com/0a74f597683a7686535e5a18d38c0664/a084a4c94063d9a4-18/s1280x1920/cb5b21dc0db563ab4b8fd1a93b9e41b0b19f154c.jpg');"></div>
+
+        </div>
+
+
+    <script>
+        const backgroundImages = [
+            'https://r2.chiikawawallpaper.com/wallpaper/wallpaper/4k/8de36e96ef0918772c4497919a0aa8b4-1920.jpg',
+            'https://r2.chiikawawallpaper.com/wallpaper/wallpaper/4k/20250903204534_1d8bff4afb93ebe23608c186d02f7847-1920.jpg',
+            'https://r2.chiikawawallpaper.com/wallpaper/wallpaper/775fd3fd30b89762cffb65cef3f999cb.jpg',
+            'https://r2.chiikawawallpaper.com/wallpaper/wallpaper/20250714/68750ed4707da.jpeg',
+            'https://r2.chiikawawallpaper.com/wallpaper/wallpaper/1be91595f4bc1eb65dbd8942d5372da6.jpg',
+            'https://r2.chiikawawallpaper.com/wallpaper/wallpaper/role/20250828210036_2c7412fa9c29fd8b4f237a97313f8076-1920.jpg', 
+            'https://r2.chiikawawallpaper.com/wallpaper/wallpaper/20250714/687511b3120e2.jpeg',
+            'https://r2.chiikawawallpaper.com/wallpaper/wallpaper/20250714/687511b42d0c4.jpeg', 
+            'https://r2.chiikawawallpaper.com/wallpaper/Frame%2048096508.png', 
+            'https://r2.chiikawawallpaper.com/wallpaper/wallpaper/344e5243405596406247dd2ecd8a4694.jpg'  
+        ];
+
+        function setRandomBackground() {
+            const randomIndex = Math.floor(Math.random() * backgroundImages.length);
+            
+            const selectedImage = backgroundImages[randomIndex];
+            
+            document.body.style.backgroundImage = `url('${selectedImage}')`;
+        }
+        
+        window.onload = setRandomBackground;
+
+        function toggleImage(imageNumber) {
+            const imageElement = document.getElementById(`image${imageNumber}`);
+            
+            if (imageElement) {
+                if (imageElement.style.display === 'none') {
+                    imageElement.style.display = 'block';
+                } else {
+                    imageElement.style.display = 'none';
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
