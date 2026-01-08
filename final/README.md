@@ -14,11 +14,12 @@ http://localhost:5173
 ## Ekran Görüntüleri
 ### Ana Sayfa
 ![Ana Sayfa](1.png)
-### Hava Durumu Görünmtüleri
+### Hava Durumu Görüntüleri
 ![Açık](2.png)
 ![Bulutlu](3.png)
 ![Yağmurlu](4.png)
-![Karlı](/5.png)
+![Karlı](5.png)
 ![Sisli](6.png)
+
 
 
