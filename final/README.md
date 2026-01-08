@@ -13,10 +13,11 @@ http://localhost:5173
 
 ## Ekran Görüntüleri
 ### Ana Sayfa
-![Ana Sayfa](public/1.png)
+![Ana Sayfa](.assets/1.png)
 ### Hava Durumu Görünmtüleri
-![Açık](public/2.png)
-![Bulutlu](public/screenshots/3.png)
-![Yağmurlu](public/4.png)
-![Karlı](public/5.png)
-![Sisli](public/6.png)
+![Açık](.assets/2.png)
+![Bulutlu](.assets/screenshots/3.png)
+![Yağmurlu](.assets/4.png)
+![Karlı](.assets/5.png)
+![Sisli](.assets/6.png)
+
